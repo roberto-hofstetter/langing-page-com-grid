@@ -1,0 +1,121 @@
+/* GRID */
+body{
+    display: grid;
+    grid-template-areas: "header header header header"
+                "hero hero hero hero"
+                "about about about about"
+                "services services services services"
+                "contact contact contact contact"
+                "footer footer footer footer";
+    grid-template-columns: repeat(4, 1fr);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+/* HEADER */
+.header{
+    grid-area: header;
+    background-color: aqua;
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+}
+
+.header h1{
+    font-size: 7px;
+}
+
+.header .menu ul{
+    display: flex;
+}
+
+.header .menu li{
+    margin-left: 15px;
+    font-size: 7px;
+}
+
+/* HERO */
+.hero{
+    grid-area: hero;
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    background: url(../images/sky.jpg) center bottom no-repeat;
+    background-size: cover;
+    height: 300px;
+}
+
+.hero h2{
+    color: #fff;
+    margin-top: 30px;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* ABOUT */
+.about{
+    grid-area: about;
+    background-color:dodgerblue;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 200px 200px;
+    max-height: 400px;
+}
+
+.about .item{
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+}
+
+.about .item h3{
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.about .item p{
+    font-weight: 100;
+    font-size: 10px;
+    margin: 10px 0;
+}
+
+.about .item a{
+    font-size: 7px;
+    margin-top: auto; 
+}
+
+.about .image{
+    height: 100%;
+    width: 100%;    
+}
+
+.about .image.flowers{
+    background: url('/src/images/flowers.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+.about .image.plants{
+    background: url('/src/images/plants.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+/* SERVICES */
+.services{
+    grid-area: services;
+    background-color: chartreuse;
+}
+
+/* CONTACT */
+.contact{
+    grid-area: contact;
+    background-color: darkgoldenrod;
+}
+
+.footer{
+    grid-area: footer;
+    background-color: darksalmon;
+}
