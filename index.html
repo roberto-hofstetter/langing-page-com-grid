@@ -2,84 +2,93 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="./src/images/favicon-32x32.png">
-  <title>Landing page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./src/images/favicon-32x32.png">
+    <title>Landing page</title>
 
-  <link rel="stylesheet" href="./src/css/reset.css">
-  <link rel="stylesheet" href="./src/css/variables.css">
-  <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/variables.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/menu.css">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <header class="header">
-    <div class="header-container">
-      <a href="/">
-        <h1 class="logo">Landing Page</h1>
-      </a>
-      <nav class="menu">
-        <ul>
-          <li><a href="">About</a></li>
-          <li><a href="">Services</a></li>
-          <li><a href="">Projects</a></li>
-          <li><a href="">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+    <header class="header">
+        <div class="header-container">
+            <a href="/">
+                <h1 class="logo">Landing Page</h1>
+            </a>
+            <nav>
+                <input id="menu-hamburguer" type="checkbox" />
 
-  <section class="hero">
-    <h2>Landing Page</h2>
-  </section>
+                <label for="menu-hamburguer">
+                    <div class="menu">
+                    <span class="hamburguer"></span>
+                    </div>
+                    <ul>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Services</a></li>
+                        <li><a href="">Projects</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </label>
 
-  <section class="about">
-    <div class="item">
-      <h3>Title</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, facilis aut eos sint, voluptatibus sed
-        illo nostrum a nobis, quasi quas ipsa doloremque. Possimus eveniet, minima unde neque fugiat enim!</p>
-      <a href="">Botao</a>
-    </div>
-    <div class="image flowers"></div>
-    <div class="image plants"></div>
-    <div class="item">
-      <h3>Title</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, facilis aut eos sint, voluptatibus sed
-      </p>
-      <a href="">Botao</a>
-    </div>
-  </section>
+                
+            </nav>
+        </div>
+    </header>
 
-  <section class="services">
-    <div class="service">
-      <img src="" alt="">
-      <h3>SEO</h3>
-    </div>
-    <div class="service">
-      <img src="" alt="">
-      <h3>Criação de landing pages</h3>
-    </div>
-    <div class="service">
-      <img src="" alt="">
-      <h3>Criação de logotipos</h3>
-    </div>
-    <div class="service">
-      <img src="" alt="">
-      <h3>Identidade visual</h3>
-    </div>
-  </section>
+    <section class="hero">
+        <h2>Landing Page</h2>
+    </section>
 
-  <section class="projects">
-    projects
-  </section>
+    <section class="about">
+        <div class="item">
+            <h3>Title</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, facilis aut eos sint, voluptatibus sed illo nostrum a nobis, quasi quas ipsa doloremque. Possimus eveniet, minima unde neque fugiat enim!</p>
+            <a href="" class="btn-know-more">Saiba mais</a>
+        </div>
+        <div class="image flowers"></div>
+        <div class="image plants"></div>
+        <div class="item">
+            <h3>Title</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, facilis aut eos sint, voluptatibus sed
+            </p>
+            <a href="" class="btn-know-more">Saiba mais</a>
+        </div>
+    </section>
 
-  <footer class="footer">
-    footer
-  </footer>
+    <section class="services">
+        <div class="service">
+            <img src="" alt="">
+            <h3>SEO</h3>
+        </div>
+        <div class="service">
+            <img src="" alt="">
+            <h3>Criação de landing pages</h3>
+        </div>
+        <div class="service">
+            <img src="" alt="">
+            <h3>Criação de logotipos</h3>
+        </div>
+        <div class="service">
+            <img src="" alt="">
+            <h3>Identidade visual</h3>
+        </div>
+    </section>
+
+    <section class="projects">
+        projects
+    </section>
+
+    <footer class="footer">
+        footer
+    </footer>
 </body>
 
 </html>
