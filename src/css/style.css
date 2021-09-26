@@ -22,8 +22,7 @@ body{
 }
 
 /* HEADER */
-.header{
-    background-color: aqua;
+.header{    
     grid-area: header;    
 }
 
@@ -37,7 +36,8 @@ body{
 }
 
 .header h1{
-    font-size: 1.7rem;
+    font-size: 3rem;
+    font-weight: 700;
 }
 
 .header .menu ul{
@@ -45,8 +45,12 @@ body{
 }
 
 .header .menu li{
-    margin-left: 15px;
-    font-size: 1.7rem;
+    margin-left: 15px;    
+}
+
+.header .menu li a{
+    font-size: 2rem;
+    font-weight: 500;
 }
 
 /* HERO */
@@ -57,22 +61,21 @@ body{
     justify-content: center;
     background: url(../images/sky.jpg) center bottom no-repeat;
     background-size: cover;
-    height: 300px;   
+    height: 100vh;   
     width: 100%; 
 }
 
 .hero h2{
     color: #fff;
-    margin-top: 30px;
+    margin-top: 60px;
     text-transform: uppercase;
-    font-size: 2.0rem;
+    font-size: 4rem;
     font-weight: 500;
 }
 
 /* ABOUT */
 .about{
     grid-area: about;
-    background-color:dodgerblue;
     display: grid;
     grid-template-columns: 1fr 1fr;    
     min-height: 600px;
@@ -80,24 +83,25 @@ body{
 }
 
 .about .item{
-    padding: 40px;
+    padding: 20%;
     display: flex;
     flex-direction: column;
-    background-color: red;
+    justify-content: center;
 }
 
 .about .item h3{    
     font-weight: 700;
+    font-size: 4rem;
 }
 
 .about .item p{
-    font-weight: 100;
-    margin: 10px 0;
+    font-weight: 400;
+    font-size: 1.8rem;
+    margin: 30px 0;
 }
 
 .about .item a{
-    font-size: 1.6rem;
-    margin-top: auto; 
+    font-size: 1.6rem;    
 }
 
 .about .image{
