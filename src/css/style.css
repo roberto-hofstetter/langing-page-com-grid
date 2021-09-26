@@ -73,7 +73,6 @@ body {
     font-weight: 500;
 }
 
-
 /* ABOUT */
 
 .about {
@@ -86,9 +85,6 @@ body {
 
 .about .item {
     padding: 20%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
 .about .item h3 {
