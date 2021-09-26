@@ -1,3 +1,11 @@
+html{
+    font-size: 62.5%;
+}
+
+section{    
+    margin: 0 auto;  
+}
+
 /* GRID */
 body{
     display: grid;
@@ -5,26 +13,31 @@ body{
                 "hero hero hero hero"
                 "about about about about"
                 "services services services services"
-                "contact contact contact contact"
+                "projects projects projects projects"
                 "footer footer footer footer";
     grid-template-columns: repeat(4, 1fr);
     font-family: 'Roboto', sans-serif;
-    font-weight: 400;
+    font-size: 1.6rem;
+    font-weight: 400;    
 }
 
 /* HEADER */
 .header{
-    grid-area: header;
     background-color: aqua;
-    display: flex;
-    padding: 10px;
+    grid-area: header;    
+}
+
+.header .header-container{
+    max-width: var(--max-width-size);    
+    margin: 0 auto;
+    display: flex;    
     justify-content: space-between;
-    align-items: center;
-    height: 30px;
+    align-items: center; 
+    padding: 20px 40px;
 }
 
 .header h1{
-    font-size: 7px;
+    font-size: 1.7rem;
 }
 
 .header .menu ul{
@@ -33,7 +46,7 @@ body{
 
 .header .menu li{
     margin-left: 15px;
-    font-size: 7px;
+    font-size: 1.7rem;
 }
 
 /* HERO */
@@ -44,14 +57,15 @@ body{
     justify-content: center;
     background: url(../images/sky.jpg) center bottom no-repeat;
     background-size: cover;
-    height: 300px;
+    height: 300px;   
+    width: 100%; 
 }
 
 .hero h2{
     color: #fff;
     margin-top: 30px;
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 2.0rem;
     font-weight: 500;
 }
 
@@ -60,9 +74,9 @@ body{
     grid-area: about;
     background-color:dodgerblue;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 200px 200px;
-    max-height: 400px;
+    grid-template-columns: 1fr 1fr;    
+    min-height: 600px;
+    max-width: var(--max-width-size);
 }
 
 .about .item{
@@ -72,19 +86,17 @@ body{
     background-color: red;
 }
 
-.about .item h3{
-    font-size: 15px;
+.about .item h3{    
     font-weight: 700;
 }
 
 .about .item p{
     font-weight: 100;
-    font-size: 10px;
     margin: 10px 0;
 }
 
 .about .item a{
-    font-size: 7px;
+    font-size: 1.6rem;
     margin-top: auto; 
 }
 
@@ -99,7 +111,7 @@ body{
 }
 
 .about .image.plants{
-    background: url('/src/images/plants.jpg') center center no-repeat;
+    background: url('/src/images/plants2.jpg') center center no-repeat;
     background-size: cover;
 }
 
@@ -107,11 +119,12 @@ body{
 .services{
     grid-area: services;
     background-color: chartreuse;
+    max-width: var(--max-width-size);  
 }
 
-/* CONTACT */
-.contact{
-    grid-area: contact;
+/* PROJECTS */
+.projects{
+    grid-area: projects;
     background-color: darkgoldenrod;
 }
 
