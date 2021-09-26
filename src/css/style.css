@@ -107,6 +107,14 @@ body{
 .services{
     grid-area: services;
     background-color: chartreuse;
+    grid-template-columns: 1fr;
+}
+
+.services .service {
+    background-color: aliceblue;
+    width: 300px;
+    height: 100px;
+    grid-column-start: 1;
 }
 
 /* CONTACT */
