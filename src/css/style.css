@@ -17,7 +17,6 @@ body {
     font-weight: 400;
 }
 
-
 /* HEADER */
 
 .header {
@@ -42,15 +41,11 @@ body {
     display: flex;
 }
 
-.header nav li {
-    margin-left: 15px;
-}
-
 .header nav li a {
     font-size: 2rem;
     font-weight: 500;
+    padding: 10px 30px;
 }
-
 
 /* HERO */
 

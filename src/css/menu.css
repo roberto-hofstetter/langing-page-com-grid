@@ -9,9 +9,31 @@
     display: none;
 }
 
+.menu a{
+    display: inline-block;
+}
+
+.menu a h1{
+    transition: 0.3s;
+}
+
+.menu a h1:hover{
+    color: dodgerblue;
+}
+
 nav label{
     display: flex;
     flex-direction: column;
+}
+
+nav ul li a{
+    transition: 0.3s;
+    border-radius: 50px;
+}
+
+nav ul li a:hover{
+    background-color: dodgerblue;
+    color: #fff;
 }
   
 .hamburguer {
@@ -79,8 +101,9 @@ input:checked ~ label ul{
     nav{
         position: absolute;
         top: 8px;
-        left: 0;
-        width: 100%;
+        right: 0;  
+        width: 200px;     
+        z-index: 0;
     }
 
     .header .header-container{
@@ -94,8 +117,8 @@ input:checked ~ label ul{
     .header nav ul{
         display: none;
         width: 100%;
-        background-color: white;        
-        height: 100vh;
+        background-color: white;         
+        padding: 20px;       
     }
 
     .header nav li a{
