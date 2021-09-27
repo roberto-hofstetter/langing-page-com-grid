@@ -2,10 +2,6 @@ html {
     font-size: 62.5%;
 }
 
-section {
-    margin: 0 auto;
-}
-
 /* GRID */
 
 body {
@@ -99,6 +95,7 @@ body {
     grid-template-columns: 1fr 1fr;
     min-height: 600px;
     max-width: var(--max-width-size);
+    margin: 0 auto;
 }
 
 .about .item {
