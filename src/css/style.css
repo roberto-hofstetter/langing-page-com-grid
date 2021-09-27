@@ -175,6 +175,10 @@ body {
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
+.projects img{
+    height: 100%;
+}
+
 .project {
     /* flex-basis: 25%; */
     /* flex: 1 1 200px; */
@@ -189,8 +193,7 @@ body {
 .footer {
     grid-area: footer;
     background-color: darksalmon;
-    display: flex;
-    margin: auto;
+    display: flex;    
     flex-direction: column;
     text-align: center;
 }

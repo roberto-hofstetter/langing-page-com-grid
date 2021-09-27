@@ -21,17 +21,17 @@
     color: dodgerblue;
 }
 
-nav label{
+.header nav label{
     display: flex;
     flex-direction: column;
 }
 
-nav ul li a{
+.header nav ul li a{
     transition: 0.3s;
     border-radius: 50px;
 }
 
-nav ul li a:hover{
+.header nav ul li a:hover{
     background-color: dodgerblue;
     color: #fff;
 }
@@ -84,7 +84,7 @@ input:checked ~ label .hamburguer:after {
     bottom: 0;
 }
 
-input:checked ~ label ul{
+.header nav input:checked ~ label ul{
     display: block;    
     width: 100%;
     position: absolute;
@@ -94,16 +94,16 @@ input:checked ~ label ul{
 
 @media(max-width: 900px){
 
-    nav input:checked ~ ul{
+    .header nav input:checked ~ ul{
         display: block;
     }
 
-    nav{
+    .header nav{
         position: absolute;
         top: 8px;
         right: 0;  
         width: 200px;     
-        z-index: 0;
+        z-index: 1;
     }
 
     .header .header-container{
