@@ -29,7 +29,7 @@ body {
 
 .header {
     grid-area: header;
-    background-color: lightcyan;
+    background-color:#fff;
 }
 
 .header .header-container {
@@ -45,10 +45,11 @@ body {
 .header h1 {
     font-size: 3rem;
     font-weight: 700;
+    transition: 0.3s;
 }
 
-.header h1 a:hover{
-    color: lightskyblue;
+.header a:hover h1{
+    color: coral;
 }
 
 /* HERO */
@@ -244,6 +245,7 @@ body {
 
 .projects img{
     height: 100%;
+    transition: 0.3s;
 }
 
 .projects a:hover img{
@@ -286,6 +288,7 @@ body {
     font-weight: 500;
     font-size: 2rem;
     margin: 20px;
+    transition: 0.3s;
 }
 
 .footer nav ul li a:hover{
@@ -295,6 +298,7 @@ body {
 
 .footer .social i {    
     font-size: 2rem;
+    transition: 0.3s;
 }
 
 .footer .social a{
