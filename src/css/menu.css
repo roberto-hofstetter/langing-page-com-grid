@@ -6,30 +6,6 @@
     font-size: 2rem;
     font-weight: 500;
     padding: 10px 30px;
-}
-
-.header .menu{
-    display: none;
-}
-
-.header .menu a{
-    display: inline-block;
-}
-
-.header .menu a h1{
-    transition: 0.3s;
-}
-
-.menu a h1:hover{
-    color: dodgerblue;
-}
-
-.header nav label{
-    display: flex;
-    flex-direction: column;
-}
-
-.header nav ul li a{
     transition: 0.3s;
     border-radius: 50px;
 }
@@ -37,6 +13,24 @@
 .header nav ul li a:hover{
     background-color: dodgerblue;
     color: #fff;
+}
+
+/* RESPONSIVE */
+
+.header .menu{
+    display: none;
+    background: #fff;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;    
+    bottom: 25px;
+    right: 25px;
+    align-self: flex-end;    
+}
+
+.header nav label{
+    display: flex;
+    flex-direction: column;
 }
   
 .header .hamburguer {
@@ -97,13 +91,7 @@
 
 @media(max-width: 900px){
     .header .menu {
-        background: #fff;
-        border-radius: 50%;
-        width: 60px;
-        height: 60px;    
-        bottom: 25px;
-        right: 25px;
-        align-self: flex-end;
+        display: block; 
     }
 
     .header nav input:checked ~ ul{
@@ -118,14 +106,6 @@
         z-index: 1;
     }
 
-    .header .header-container{
-        display: block;
-    }
-
-    .header .menu{
-        display: block;        
-    }
-
     .header nav ul{
         display: none;
         width: 100%;
@@ -133,16 +113,16 @@
         padding: 20px;       
     }
 
+    .header nav li {
+        margin-left: 15px;
+        text-align: center;
+        display: block;
+    }
+
     .header nav li a{
         font-size: 2rem;
         font-weight: 500;
         padding: 20px;
-        display: block;
-    }
-
-    .header nav li {
-        margin-left: 15px;
-        text-align: center;
         display: block;
     }
 }
