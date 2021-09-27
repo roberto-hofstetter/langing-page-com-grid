@@ -137,22 +137,83 @@ body {
 
 
 /* SERVICES */
-
 .services {
     grid-area: services;
+    display: grid;
     background-color: chartreuse;
-    max-width: var(--max-width-size);
+    /* max-width: var(--max-width-size); */
+    min-height: 200px;
+    grid-template-columns: 1fr 1fr ;
+}
+
+.services .lemons {
+    background: url('/src/images/lemons.jpg') center -40px repeat;
+    background-size: cover;
+}
+
+.services .service .service-info {
+    text-align: center;
+    position: relative;
+    top: 120px;
+    padding: 10px;
+}
+
+.services .service .service-info h3 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.services .service .service-info p {
+    font-size: 16px;
 }
 
 
 /* PROJECTS */
-
 .projects {
     grid-area: projects;
-    background-color: darkgoldenrod;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.project {
+    /* flex-basis: 25%; */
+    /* flex: 1 1 200px; */
+}
+
+@media(max-width: 768px) {
+    .projects {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 .footer {
     grid-area: footer;
     background-color: darksalmon;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer .container {
+    padding: 40px 0;
+}
+
+.footer h4 {
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.footer nav ul{
+    display: flex;
+    flex-direction: row;
+}
+
+.footer nav ul li {
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.footer .social i {
+    padding: 10px;
 }
