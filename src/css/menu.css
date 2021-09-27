@@ -1,19 +1,22 @@
-.menu {
-    background: #fff;
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;    
-    bottom: 25px;
-    right: 25px;
-    align-self: flex-end;
+.header nav ul {
+    display: flex;
+}
+
+.header nav li a {
+    font-size: 2rem;
+    font-weight: 500;
+    padding: 10px 30px;
+}
+
+.header .menu{
     display: none;
 }
 
-.menu a{
+.header .menu a{
     display: inline-block;
 }
 
-.menu a h1{
+.header .menu a h1{
     transition: 0.3s;
 }
 
@@ -36,7 +39,7 @@
     color: #fff;
 }
   
-.hamburguer {
+.header .hamburguer {
     position: relative;
     display: block;
     background: #000;
@@ -47,8 +50,8 @@
     transition: 0.5s ease-in-out;
 }
 
-.hamburguer:before,
-.hamburguer:after {
+.header .hamburguer:before,
+.header .hamburguer:after {
     background: #000;
     content: '';
     display: block;
@@ -58,28 +61,28 @@
     transition: 0.2s ease-in-out;
 }
 
-.hamburguer:before {
+.header .hamburguer:before {
     top: -10px;
 }
 
-.hamburguer:after {
+.header .hamburguer:after {
     bottom: -10px;
 }
 
-input {
+.header input {
     display: none;
 }
 
-input:checked ~ label .hamburguer {
+.header input:checked ~ label .hamburguer {
     transform: rotate(45deg);
 }
 
-input:checked ~ label .hamburguer:before {
+.header input:checked ~ label .hamburguer:before {
     transform: rotate(90deg);
     top: 0;
 }
 
-input:checked ~ label .hamburguer:after {
+.header input:checked ~ label .hamburguer:after {
     transform: rotate(90deg);
     bottom: 0;
 }
@@ -93,6 +96,15 @@ input:checked ~ label .hamburguer:after {
 }
 
 @media(max-width: 900px){
+    .header .menu {
+        background: #fff;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;    
+        bottom: 25px;
+        right: 25px;
+        align-self: flex-end;
+    }
 
     .header nav input:checked ~ ul{
         display: block;
@@ -110,7 +122,7 @@ input:checked ~ label .hamburguer:after {
         display: block;
     }
 
-    .menu{
+    .header .menu{
         display: block;        
     }
 
