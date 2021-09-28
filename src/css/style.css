@@ -57,10 +57,10 @@ body {
     height: 89vh;
     width: 100%;
     position: relative;
+    align-items: center;
 }
 
-.hero h2 {    
-    margin-top: 100px;
+.hero h2 {        
     text-transform: uppercase;
     font-size: 4rem;
     font-weight: 500;
