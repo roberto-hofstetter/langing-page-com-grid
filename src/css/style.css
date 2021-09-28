@@ -147,13 +147,13 @@ body {
     width: 100%;
 }
 
-.about .image.flowers {
+.about .image.rigth {
     background: url('/src/images/bridge.jpg') center center no-repeat;
     background-size: cover;
 }
 
-.about .image.plants {
-    background: url('/src/images/plants2.jpg') center center no-repeat;
+.about .image.left {
+    background: url('/src/images/sky.jpg') center center no-repeat;
     background-size: cover;
 }
 
