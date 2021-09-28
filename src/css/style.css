@@ -52,7 +52,7 @@ body {
     grid-area: hero;
     display: flex;
     justify-content: center;
-    background: url(../images/sky.jpg) center bottom no-repeat;
+    background: url(../images/lemons.jpg) center center no-repeat;
     background-size: cover;
     height: 89vh;
     width: 100%;
@@ -149,7 +149,7 @@ body {
 }
 
 .about .image.flowers {
-    background: url('/src/images/flowers.jpg') center center no-repeat;
+    background: url('/src/images/bridge.jpg') center center no-repeat;
     background-size: cover;
 }
 
